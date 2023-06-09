@@ -1,0 +1,29 @@
+{
+  "namespace":"org.fred.demo.ooo",
+  "name":"TransactionState",
+  "type":"record",
+  "fields":[
+    {
+      "name":"id",
+      "type":{
+        "type":"long"
+      }
+    },
+    {
+      "name":"transactionTs",
+      "type": ["null", "long"]
+    },
+    {
+      "name":"ackTs",
+      "type": ["null", "long"]
+    },
+    {
+      "name": "data",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "ackData",
+      "type": ["null", "string"]
+    }
+  ]
+}
